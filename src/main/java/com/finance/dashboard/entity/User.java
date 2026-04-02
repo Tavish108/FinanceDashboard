@@ -1,13 +1,15 @@
 package com.finance.dashboard.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "users")
-@Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
@@ -35,4 +37,31 @@ public class User {
 
     private LocalDateTime createdAt = LocalDateTime.now();
 
+    public Long getId() {
+        return this.id;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getEmail() {
+        return this.email;
+    }
+
+    public String getPassword() {
+        return this.password;
+    }
+
+    public Role getRole() {
+        return this.role;
+    }
+
+    public boolean isActive() {
+        return this.active;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return this.createdAt;
+    }
 }
