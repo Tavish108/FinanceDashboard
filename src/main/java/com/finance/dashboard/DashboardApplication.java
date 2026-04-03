@@ -20,7 +20,7 @@ public class DashboardApplication {
 	@GetMapping("/")
 	public String home() {
 		return "Finance Dashboard Backend is running successfully!\n\n" +
-				"Go to Swagger UI: http://localhost:8081/swagger-ui/index.html (locally)+"+
+				"Go to Swagger UI: http://localhost:8081/swagger-ui/index.html (locally)" +
 				"on render deployment /swagger-ui/index.html";
 
 	}
