@@ -15,14 +15,14 @@ public class TestController {
     @Operation(summary = "4.1 Public API")
     @GetMapping("/public")
     public String publicApi() {
-        return "Public endpoint ✅";
+        return "Public endpoint ";
     }
 
     @Operation(summary = "4.2 Analyst Access")
     @GetMapping("/analyst")
     @PreAuthorize("hasAnyRole('ADMIN','ANALYST')")
     public String analystApi() {
-        return "Analyst + Admin 📊";
+        return "Analyst + Admin ";
     }
 
     @Operation(summary = "4.3 Admin Access")

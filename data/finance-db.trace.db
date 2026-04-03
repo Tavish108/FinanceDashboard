@@ -480,3 +480,6 @@ select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only [42104
 2026-04-02 18:00:28.581786+05:30 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
 select u1_0.id from users u1_0 where u1_0.email=? fetch first ? rows only [42104-224]
+2026-04-03 17:02:32.602801+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * [*]form users"; SQL statement:
+select * form users [42000-224]
